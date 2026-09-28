@@ -314,33 +314,7 @@ In this particular experiment, the Proxmox VE VM produced higher measured CPU th
 The results demonstrate that the virtualization environment and its configuration can influence virtual-machine CPU benchmark performance. However, additional controlled test runs and identical host hardware/configurations would be required to make a broader comparison of virtualization platforms.
 
 
-9. Project Structure
-CC-Experiment-01-Hypervisor-Analysis/
-│
-├── README.md
-│
-├── screenshots/
-│   │
-│   ├── type1-proxmox/
-│   │   ├── 01-proxmox-dashboard.png
-│   │   ├── 02-proxmox-vm-configuration.png
-│   │   ├── 03-proxmox-vm-running.jpeg
-│   │   ├── 04-proxmox-ubuntu-console.jpeg
-│   │   ├── 05-proxmox-system-configuration.jpeg
-│   │   ├── 06-proxmox-sysbench-result.jpeg
-│   │   └── 07-proxmox-resource-monitoring.jpeg
-│   │
-│   ├── type2-vmware/
-│   │   ├── 01-vmware-vm-configuration.jpeg
-│   │   ├── 02-vmware-vm-running.jpeg
-│   │   ├── 03-vmware-system-configuration.jpeg
-│   │   └── 04-vmware-sysbench-result.jpeg
-│   │
-│   └── comparison/
-│       └── 01-hypervisor-performance-comparison.png
-│
-└── results/
-    └── performance-analysis.md
+
 
 10. VM Shutdown
 Ubuntu VM
