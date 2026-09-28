@@ -168,6 +168,7 @@ Sysbench benchmark output
 Resource monitoring
 
 5. Type-2 Hypervisor – VMware Workstation
+   
 5.1 VM Setup
 
 The VMware Workstation virtual machine was configured with the following settings:
@@ -202,6 +203,7 @@ The correct Sysbench CPU parameter is:
 
 --cpu-max-prime=20000
 
+
 5.3 Benchmark Output
 
 The important measurements obtained from the VMware Workstation virtual machine were:
@@ -216,6 +218,7 @@ Minimum Latency	0.72 ms
 Average Latency	0.94 ms
 Maximum Latency	5.32 ms
 95th Percentile	1.61 ms
+
 5.4 Observation
 
 The VMware Workstation virtual machine completed 10,589 events during the approximately 10-second benchmark.
@@ -234,6 +237,7 @@ The maximum measured latency was:
 
 Compared with the Proxmox VE result, the VMware Workstation VM processed fewer benchmark events during the test period.
 
+
 5.5 Screenshots
 
 The following screenshots should be included in the project:
@@ -245,6 +249,7 @@ Ubuntu VM running
 System configuration information
 
 Sysbench benchmark result
+
 
 6. Result Comparison
 
@@ -263,28 +268,17 @@ Maximum Latency	1.09 ms	5.32 ms
 Therefore, the measured Proxmox VE throughput was approximately 59.6% higher than the VMware Workstation throughput in this experiment.
 Performance Chart
 
-The following values can be used to create a comparison chart.
-
-CPU Throughput
-Proxmox VE          █████████████████████████████████  1689.43 events/sec
-VMware Workstation  ████████████████████               1058.76 events/sec
-
-Average Latency
-Proxmox VE          ██████                              0.59 ms
-VMware Workstation  █████████                           0.94 ms
-
-Maximum Latency
-Proxmox VE          ███                                 1.09 ms
-VMware Workstation  ███████████████                     5.32 ms
 
 
-For the project, the graphical comparison can be saved as:
 
-screenshots/comparison/01-hypervisor-performance-comparison.png
+
+
+
 
 7. Performance Discussion
 
 The benchmark results show different CPU performance measurements between the two virtualization environments even though comparable virtual CPU, memory, storage, and benchmark configurations were used.
+
 8. Conclusion
 
 This experiment compared CPU benchmark performance between a Type-1 virtualization environment using Proxmox VE and a Type-2 virtualization environment using VMware Workstation.
@@ -318,6 +312,7 @@ Maximum Latency	1.09 ms	5.32 ms
 In this particular experiment, the Proxmox VE VM produced higher measured CPU throughput and lower measured latency than the VMware Workstation VM.
 
 The results demonstrate that the virtualization environment and its configuration can influence virtual-machine CPU benchmark performance. However, additional controlled test runs and identical host hardware/configurations would be required to make a broader comparison of virtualization platforms.
+
 
 9. Project Structure
 CC-Experiment-01-Hypervisor-Analysis/
